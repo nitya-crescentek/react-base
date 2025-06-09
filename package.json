@@ -1,0 +1,16 @@
+{
+  "name": "react-base",
+  "version": "1.0.0",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "WordPress plugin with React base",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.8.1"
+  }
+}
