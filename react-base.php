@@ -27,6 +27,7 @@ class ReactBase {
         
         // Initialize the main class
         $main = new \ReactBase\Classes\Main();
+        
     }
 }
 
