@@ -26,6 +26,9 @@ class Main {
      */
     public function init() {
 
+        require_once PLUGIN_BASE_PATH . 'classes/Shortcode.php';
+        require_once PLUGIN_BASE_PATH . 'classes/APIs.php';
+
         // Add admin menu
         add_action( 'admin_menu', [ $this, 'react_base_init_menu' ] );
 

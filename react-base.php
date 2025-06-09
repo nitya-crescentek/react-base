@@ -24,12 +24,9 @@ class ReactBase {
     public function __construct() {
         // Load the main class
         require_once PLUGIN_BASE_PATH . 'classes/Main.php';
-        require_once PLUGIN_BASE_PATH . 'classes/Shortcode.php';
         
         // Initialize the main class
         $main = new \ReactBase\Classes\Main();
-        // Initialize the shortcode class
-        $shortcode = new \ReactBase\Classes\Shortcode();
     }
 }
 
