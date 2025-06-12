@@ -1,6 +1,7 @@
 import { render } from '@wordpress/element';
 import Admin from "./Admin";
 import Frontend from "./Frontend";
+import Table from './components/frontend/Table';
 
 /**
  * Import the stylesheet for the plugin.
@@ -19,4 +20,11 @@ const elementFront = document.getElementById('react-frontend-root');
 
 if (elementFront) {
     render(<Frontend />, elementFront);
+}
+
+
+const reactTable = document.getElementById('react-table');
+
+if (reactTable) {
+    render(<Table />, reactTable);
 }

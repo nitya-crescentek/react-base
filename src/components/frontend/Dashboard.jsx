@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../style/frontend.scss';
 
 const Dashboard = () => {
     return (

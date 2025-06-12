@@ -15,6 +15,7 @@ class Shortcode {
     public function __construct() {
         // Register the shortcode
         add_shortcode( 'frontend_shortcode', [ $this, 'render_shortcode' ] );
+        add_shortcode( 'react_table', [ $this, 'react_table_shortcode' ] );
     }
 
     /**
@@ -29,5 +30,11 @@ class Shortcode {
         include PLUGIN_BASE_PATH . 'templates/hello_world.php';
 
         return ob_get_clean();
+    }
+
+
+    public function react_table_shortcode(){
+
+        return '<div id="react-table"></div>';
     }
 }

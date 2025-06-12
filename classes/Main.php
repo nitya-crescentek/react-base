@@ -26,6 +26,8 @@ class Main {
      */
     public function init() {
 
+        require_once PLUGIN_BASE_PATH . 'includes/ExtraFunctions.php';
+
         require_once PLUGIN_BASE_PATH . 'classes/Shortcode.php';
         $shortcode = new \ReactBase\Classes\Shortcode();
 

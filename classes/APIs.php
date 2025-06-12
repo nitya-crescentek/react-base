@@ -24,6 +24,7 @@ class APIs {
     public function init() {
         // Add API endpoints or other initialization code here
         add_action( 'rest_api_init', [ $this, 'register_api_endpoints' ] );
+
     }
 
     /**
@@ -32,11 +33,22 @@ class APIs {
      * @return void
      */
     public function register_api_endpoints() {
+        
+        // die("TEST");
+
         register_rest_route( 'react-base/v1', '/data', [
             'methods'  => 'GET',
             'callback' => [ $this, 'get_data' ],
             'permission_callback' => '__return_true',
         ] );
+
+
+        register_rest_route( 'react-base/v1', '/table-data', [
+            'methods'  => 'GET',
+            'callback' => [ $this, 'get_table_data' ],
+            'permission_callback' => '__return_true',
+        ] );
+        
     }
 
     /**
@@ -49,5 +61,21 @@ class APIs {
             'message' => __( 'Hello from React Base API!', 'react_base' ),
         ];
         return rest_ensure_response( $data );
+    }
+
+
+    public function get_table_data() {
+        $data = [
+            'columns' => ['Dessert (100g serving)', 'Calories', 'Fat (g)', 'Carbs (g)', 'Protein (g)'],
+            'rows'    => [
+                ['Frozen yoghurt', 159, 6, 24, 4],
+                ['Ice cream sandwich', 237, 9, 37, 4.3],
+                ['Eclair', 262, 16, 24, 6],
+                ['Cupcake', 305, 3.7, 67, 4.3],
+                ['Gingerbread', 356, 16, 49, 3.9],
+            ],
+        ];
+
+        return rest_ensure_response($data);
     }
 }
