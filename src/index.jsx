@@ -2,6 +2,7 @@ import { render } from '@wordpress/element';
 import Admin from "./Admin";
 import Frontend from "./Frontend";
 import Table from './components/frontend/Table';
+import Certificate from './components/frontend/Certificate';
 
 /**
  * Import the stylesheet for the plugin.
@@ -27,4 +28,12 @@ const reactTable = document.getElementById('react-table');
 
 if (reactTable) {
     render(<Table />, reactTable);
+}
+
+
+
+const CirtifigateTable = document.getElementById('student-cirtifigate');
+
+if (CirtifigateTable) {
+    render(<Certificate />, CirtifigateTable);
 }

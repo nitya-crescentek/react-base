@@ -12577,6 +12577,111 @@ const Dashboard = () => {
 
 /***/ }),
 
+/***/ "./src/components/frontend/Certificate.jsx":
+/*!*************************************************!*\
+  !*** ./src/components/frontend/Certificate.jsx ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const Certificate = () => {
+  const getCertificateData = () => {
+    return {
+      studentName: 'Jane Elizabeth Carter',
+      courseName: 'Certified React Developer',
+      issuedDate: 'March 15, 2025',
+      level: 'Intermediate',
+      certificateId: 'VERIFY-10MS9HBDDQ',
+      instructorName: 'Thomas Thorsell-Arntsen',
+      verificationUrl: 'https://verify.example.com/10MS9HBDDQ'
+    };
+  };
+  const data = getCertificateData();
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    className: "certificate",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "certificate-border",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "certificate-inner",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "certificate-header",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+            src: "https://www.w3schools.com/images/w3schools_logo_436_2.png",
+            alt: "Logo",
+            className: "logo"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
+            children: "CERTIFICATE OF COMPLETION"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "certify-line",
+          children: "This certifies that"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
+          className: "student-name",
+          children: data.studentName
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+          className: "course-line",
+          children: ["has passed the ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
+            children: data.courseName
+          }), " certification exam and is hereby declared a"]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+          className: "course-title",
+          children: data.courseName
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          className: "badge-section",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+            className: "badge",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+              children: data.level
+            })
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+          className: "exam-level",
+          children: ["The candidate has passed the exam at the ", data.level, " level."]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+          className: "issue-date",
+          children: ["Issued on ", data.issuedDate]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "signature-section",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+            src: "https://www.w3schools.com/images/thomas_signature.png",
+            alt: "Signature",
+            className: "signature-img"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            className: "instructor-name",
+            children: data.instructorName
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            className: "instructor-title",
+            children: "for W3Schools.com"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "verification",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            children: "Verify completion at"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: data.verificationUrl,
+            target: "_blank",
+            rel: "noreferrer",
+            children: data.verificationUrl
+          })]
+        })]
+      })
+    })
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Certificate);
+
+/***/ }),
+
 /***/ "./src/components/frontend/Dashboard.jsx":
 /*!***********************************************!*\
   !*** ./src/components/frontend/Dashboard.jsx ***!
@@ -12879,9 +12984,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Admin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Admin */ "./src/Admin.js");
 /* harmony import */ var _Frontend__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Frontend */ "./src/Frontend.js");
 /* harmony import */ var _components_frontend_Table__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/frontend/Table */ "./src/components/frontend/Table.jsx");
-/* harmony import */ var _style_main_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style/main.scss */ "./src/style/main.scss");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_frontend_Certificate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/frontend/Certificate */ "./src/components/frontend/Certificate.jsx");
+/* harmony import */ var _style_main_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./style/main.scss */ "./src/style/main.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 
@@ -12894,15 +13001,19 @@ __webpack_require__.r(__webpack_exports__);
 
 const elementAdmin = document.getElementById('react-admin-root');
 if (elementAdmin) {
-  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Admin__WEBPACK_IMPORTED_MODULE_1__["default"], {}), elementAdmin);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Admin__WEBPACK_IMPORTED_MODULE_1__["default"], {}), elementAdmin);
 }
 const elementFront = document.getElementById('react-frontend-root');
 if (elementFront) {
-  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Frontend__WEBPACK_IMPORTED_MODULE_2__["default"], {}), elementFront);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Frontend__WEBPACK_IMPORTED_MODULE_2__["default"], {}), elementFront);
 }
 const reactTable = document.getElementById('react-table');
 if (reactTable) {
-  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_frontend_Table__WEBPACK_IMPORTED_MODULE_3__["default"], {}), reactTable);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_frontend_Table__WEBPACK_IMPORTED_MODULE_3__["default"], {}), reactTable);
+}
+const CirtifigateTable = document.getElementById('student-cirtifigate');
+if (CirtifigateTable) {
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_frontend_Certificate__WEBPACK_IMPORTED_MODULE_4__["default"], {}), CirtifigateTable);
 }
 })();
 

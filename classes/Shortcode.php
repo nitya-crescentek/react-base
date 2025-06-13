@@ -16,6 +16,7 @@ class Shortcode {
         // Register the shortcode
         add_shortcode( 'frontend_shortcode', [ $this, 'render_shortcode' ] );
         add_shortcode( 'react_table', [ $this, 'react_table_shortcode' ] );
+        add_shortcode( 'cirtifigate', [ $this, 'react_cirtifigate' ] );
     }
 
     /**
@@ -36,5 +37,10 @@ class Shortcode {
     public function react_table_shortcode(){
 
         return '<div id="react-table"></div>';
+    }
+
+    public function react_cirtifigate(){
+
+        return '<div id="student-cirtifigate"></div>';
     }
 }

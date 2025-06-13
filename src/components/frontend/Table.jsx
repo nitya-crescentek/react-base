@@ -42,11 +42,11 @@ const TableData = () => {
             <TableContainer component={Paper}>
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
-                    <TableRow>
-                        {data.columns.map((col, index) => (
-                            <TableCell key={index}>{col}</TableCell>
-                        ))}
-                    </TableRow>
+                        <TableRow>
+                            {data.columns.map((col, index) => (
+                                <TableCell key={index}>{col}</TableCell>
+                            ))}
+                        </TableRow>
                     </TableHead>
                     <TableBody>
                         {data.rows.map((row, rowIndex) => (
